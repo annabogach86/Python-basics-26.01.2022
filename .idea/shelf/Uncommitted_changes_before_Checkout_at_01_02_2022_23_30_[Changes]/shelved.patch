@@ -1,0 +1,15 @@
+Index: task_5/5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>proceeds = int(input('Введите значение выручки фирмы: '))\r\ncost = int(input('Введите значение издержек фирмы: '))\r\nif proceeds > cost:\r\n    print('Фирма работает с прибылью!')\r\n    print('Рентабельность фирмы равна: ', ((proceeds - cost) / proceeds) * 100, '%')\r\n    worker = int(input('Введите численность сотрудников фирмы: '))\r\n    print('Прибыль фирмы в расчете на одного сотрудника равна: ', (proceeds - cost) / worker)\r\nelse:\r\n    print('Фирма работает в убыток!')\r\n    
+===================================================================
+diff --git a/task_5/5.py b/task_5/5.py
+--- a/task_5/5.py	
++++ b/task_5/5.py	
+@@ -7,4 +7,5 @@
+     print('Прибыль фирмы в расчете на одного сотрудника равна: ', (proceeds - cost) / worker)
+ else:
+     print('Фирма работает в убыток!')
++
+     
+\ No newline at end of file
